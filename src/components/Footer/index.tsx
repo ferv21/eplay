@@ -32,7 +32,7 @@ const Footer = () => (
         <SectionTitle>Acesso Rápido</SectionTitle>
         <Links>
           <li>
-            <Link>Novidas</Link>
+            <Link>Novidades</Link>
           </li>
           <li>
             <Link>Promoção</Link>
