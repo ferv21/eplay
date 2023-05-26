@@ -7,16 +7,30 @@ export const Imagem = styled.div`
   font-weight: bold;
   background-size: cover;
   background-repeat: no-repeat;
+
+  position: relative;
+
   .container {
     padding-top: 340px;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    z-index: 1;
   }
   ${TagContainer} {
     position: absolute;
     top: 32px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: '';
   }
 `
 

@@ -46,9 +46,13 @@ export const Modal = styled.div`
   height: 100%;
   z-index: 1;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+
+  &.visivel {
+    display: flex;
+  }
 
   .overlay {
     position: absolute;
@@ -66,15 +70,25 @@ export const ModalContent = styled.div`
   header {
     display: flex;
     justify-content: space-between;
-    margim-bottom: 24px;
+    margin-bottom: 24px;
 
     h4 {
       font-size: 18px;
       font-weight: bold;
     }
   }
-  img {
+
+  > img {
+    width: 100%;
+  }
+
+  img,
+  iframe {
     display: block;
     max-width: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: 480px;
   }
 `
