@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import bannerImg from '../../assets/images/fundo_hogwarts.png'
+
 import { Game } from '../../pages/Home'
 import Button from '../Button'
 import { formataPreco } from '../ProductsList'
