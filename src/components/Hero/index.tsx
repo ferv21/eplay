@@ -4,8 +4,6 @@ import { add, open } from '../../store/reducers/cart'
 import Button from '../Button'
 import Tag from '../Tag'
 
-import { Game } from '../../pages/Home'
-
 import * as S from './styles'
 import { parseToBrl } from '../../utils'
 
